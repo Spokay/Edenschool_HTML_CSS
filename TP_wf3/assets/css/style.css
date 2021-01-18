@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 14px;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -126,7 +130,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 2em 0;
 }
+
+
 /* block 1 */
 
 
@@ -424,6 +431,28 @@ main{
     height: 45px;
     border-radius: 50%;
 }
+
+.opacity-idf{
+    opacity: 30%;
+}
+
+.idf p{
+    margin: 3px;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+
+.idf p:nth-of-type(1){
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.idfblacktxt{
+    color: black;
+}
+
 
 
 
