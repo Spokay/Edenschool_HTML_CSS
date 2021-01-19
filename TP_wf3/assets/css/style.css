@@ -130,7 +130,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2em 0;
+    padding: 6em 0;
 }
 
 
@@ -447,6 +447,10 @@ main{
     text-transform: uppercase;
     color: black;
     font-weight: bold;
+}
+
+.idf img{
+    object-fit: contain;
 }
 
 .idfblacktxt{
