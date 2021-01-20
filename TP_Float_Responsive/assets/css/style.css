@@ -1,19 +1,24 @@
 
 
 html{
-    font-size: 16px;
+    font-size: 10px;
+}
+
+body{
+    border: 2px solid black;
 }
 
 p{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: #FFFFFF;
+    margin: 0;
 }
 
 a{
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 1.7rem;
 }
 
 #toppage {
@@ -26,7 +31,6 @@ a{
 #navigation {
     background-color:#5FAFB7;
     height: 12vh;
-    border-bottom: solid 10px #45CCFF;
 }
 
 #navigation ul{
@@ -34,6 +38,7 @@ a{
     flex-direction: row;
     justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
 #navigation li{
@@ -41,15 +46,17 @@ a{
     width: 10%;
 }
 
-#containermidpage {
-    margin: 50px;
+#containermidpage{
+    margin: 2em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .middlepageblock{
-    width: 50%;
+    width: 46%;
     height: 38vw;
+    margin: 1em;
 }
 
 .middlepage1 {
@@ -69,7 +76,9 @@ a{
     background-color: #DABC5D;
 }
 
-
+.lion{
+    display: none;
+}
 
 #bottompage {
     background-color: #003548;
@@ -80,31 +89,124 @@ a{
 /* mediaqueries */
 
 
-@media (max-width: 575.98px) {
+@media screen and (max-width: 575.98px){
     #containermidpage{
-        flex-direction: column;
+        display: block;
     }
 
     .middlepageblock{
-        border-radius: none;
+        width: 93%;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    #navigation ul{
+        justify-content: space-evenly;
     }
 }
 
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) and (min-width: 576px){
+    p{
+        font-size: 1.3rem;
+    }
 
+    a{
+        font-size: 1.3rem;
+    }
+
+    .middlepageblock{
+        height: 20vh;
+    }
+
+    #toppage{
+        height: 10vh;
+    }
+
+    #bottompage{
+        height: 10vh;
+    }
 }
 
-@media (max-width: 991.98px) {
-    
-}
+@media screen and (max-width: 991.98px) and (min-width: 768px){
+    p{
+        font-size: 1.5rem;
+    }
 
-@media (max-width: 1199.98px){
+    a{
+        font-size: 1.5rem;
+    }
+
     .middlepageblock{
         border-radius: 50%;
+    }   
+
+    .middlepage1{
+        background-image: url("../img/lion.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .middlepage2{
+        background-color: #2266ff;
+    }
+
+    .middlepage3{
+        background-color: #22ff77;
+    }
+
+    .middlepage4{
+        background-color: #ff7a22;
+    }
+
+    #toppage {
+        background-color: rgb(127, 0, 139);
+    }
+
+    #navigation{
+        background-color: #1a7ba1;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 992px){
+    .middlepageblock{
+        border-radius: 50%;
+    } 
+    
+    .middlepage1{
+        background-image: url("../img/lion.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .middlepage2{
+        background-color: #2266ff;
+    }
+
+    .middlepage3{
+        background-color: #22ff77;
+    }
+
+    .middlepage4{
+        background-color: #ff7a22;
+    }
+
+    #toppage {
+        background-color: rgb(127, 0, 139);
+    }
+
+    #navigation{
+        background-color: #1a7ba1;
     }
 }
 
-@media (max-width: 1399.98px) {
+@media screen and (max-width: 1399.98px){
 
 }
 
