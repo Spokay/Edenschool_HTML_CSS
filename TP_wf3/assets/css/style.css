@@ -15,7 +15,8 @@ h2, h3, figure, figcaption{
     margin: 0;
 }
 
-/*Header*/
+/*main blocks*/
+
 header{
     height: 180px;
     display: flex;
@@ -25,6 +26,57 @@ header{
     background-size: 5%;
     text-transform: uppercase;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.block1smaller{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block2smaller{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 8em auto;
+}
+
+.block3{
+    background-color: #66cccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 6em 0;
+}
+
+.block4smaller{
+    width: 70%;
+    margin: 5em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.block5{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/zig-zag-white-transparent-transparent.png");
+    background-repeat: repeat;
+    background-size: 5%;
+    padding: 5em 0 8em;
+    border: 1.5px solid #F5F5F5;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+/*Header*/
+
 /*topbar1*/
 .topbar1{
     width: 25%;
@@ -105,35 +157,6 @@ header{
     font-size: 17px;
 }
 
-/*main blocks*/
-main{
-    display: flex;
-    flex-direction: column;
-}
-
-.block1smaller{
-    width: 85%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.block2smaller{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: 8em auto;
-}
-
-.block3{
-    background-color: #66cccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 6em 0;
-}
-
-
 /* block 1 */
 
 
@@ -156,7 +179,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 150px;
+    padding: 139px;
     background-color: rgba(29, 28, 78, 0.7);
 }
 
@@ -457,9 +480,125 @@ main{
     color: black;
 }
 
+/* block4 */
 
+.block4smaller section:nth-child(1){
+    display: flex;
+    flex-direction: row;
+}
 
+.block4topleft{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
 
+.block4topleft iframe{
+    max-width: 100%;
+    width: 90%;
+}
 
+.block4topright{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.block4topleft h4{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.block4topright p:nth-child(1){
+    color: #66cccc;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+.block4topright h4{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.block4smaller section:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    margin-top: 3em;
+    justify-content: space-between;
+}
+
+.block4bottom{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/4.3);
+}
+
+.block4bottom div:nth-child(1){
+    overflow: hidden;
+    height: 16em;
+}
+
+.block4bottom div img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+.block4bottom h4{
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+.block4bottom p{
+    margin-top: 0;
+}
+
+.block4bottom input[value="Continuer la lecture"]{
+    color: white;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 3em;
+}
+
+/* block5 */
+
+.block5 > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+}
+
+.block5 div h3{
+    color: #4a5766;
+    font-size: 3rem;
+}
+
+.block5 > div:nth-child(2){
+    width: 60%;
+    margin: 7em auto;
+    display: flex;
+}
+
+.block5 > div > div{
+    width: calc(100%/5.3);
+    display: flex;
+    justify-content: center;
+}
+
+.block5 div > img{
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
+
+/* footer */
+
+.footertop{
+    display: flex;
+    width: 60%;
+}
 
 
