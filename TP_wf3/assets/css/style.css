@@ -356,6 +356,10 @@ footer{
     border-radius: 5px;
 }
 
+#cookies > a{
+    margin-left: 20px;
+}
+
 /* block2 */
 
 .top-block2{
@@ -606,7 +610,7 @@ footer{
 }
 
 .footertop > section:nth-child(1){
-    width: 18%;
+    width: 20%;
 }
 
 .footertop > section:nth-child(1) img{
@@ -614,17 +618,18 @@ footer{
 }
 
 .footertop > section:nth-child(2){
-    width: 45%;
+    width: 55%;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .footertop > section:nth-child(3){
-    width: 27%;
+    width: 25%;
 }
 .footlist{
     display: flex;
     flex-direction: column;
-    width: calc(100%/3);
+    width: calc(100%/3.5);
 }
 
 .footlist ul{
@@ -642,11 +647,70 @@ footer{
     color: #66cccc;
     text-decoration: none;
     font-size: 1.5rem;
-    line-height: 35px;
+}
+
+.footlist li{
+    margin: 10px 0;
 }
 
 .dieze{
     color: #FFFFFF;
+}
+
+.blueblockfoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.blueblockfoot h3{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.blueblockfoot p{
+    font-size: 1.5rem;
+    line-height: 45px;
+    text-align: center;
+}
+
+.blueblockfoot p > span{
+    background-color: #fff;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.blueblockfoot > section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.blueblockfoot > section div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials{
+    font-size: 2.3rem;
+    color: #66cccc;
+}
+
+.footertop > section:nth-child(3) > div{
+    background-color: #66cccc;
+    padding: 3em 0;
+    margin-top: -10em;
 }
 
 
